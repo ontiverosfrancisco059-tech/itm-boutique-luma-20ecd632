@@ -1,0 +1,160 @@
+{
+  "media_requests": [
+    {
+      "slot_id": "hero-banner",
+      "page": "home",
+      "section": "hero",
+      "category": "place",
+      "label": "Boutique storefront or elegant interior",
+      "theme": "modern boutique, warm lighting, welcoming atmosphere",
+      "query": "elegant boutique store interior warm lighting modern decor",
+      "priority": "high",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "about-interior",
+      "page": "home",
+      "section": "about",
+      "category": "place",
+      "label": "Boutique interior detail",
+      "theme": "cozy retail space, curated products on display",
+      "query": "boutique retail interior curated products display shelves",
+      "priority": "high",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "product-1",
+      "page": "home",
+      "section": "products",
+      "category": "product",
+      "label": "Fashion accessory or clothing item",
+      "theme": "stylish product, clean background, professional photo",
+      "query": "fashion accessory product photo clean background elegant",
+      "priority": "high",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "product-2",
+      "page": "home",
+      "section": "products",
+      "category": "product",
+      "label": "Handbag or jewelry",
+      "theme": "luxury product, minimalist presentation",
+      "query": "luxury handbag product photography minimalist white background",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "product-3",
+      "page": "home",
+      "section": "products",
+      "category": "product",
+      "label": "Clothing item on display",
+      "theme": "fashion product, warm tones, boutique style",
+      "query": "clothing fashion product display warm tones boutique style",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "product-4",
+      "page": "home",
+      "section": "products",
+      "category": "product",
+      "label": "Accessories collection",
+      "theme": "curated accessories, stylish arrangement",
+      "query": "fashion accessories collection arranged stylishly product photo",
+      "priority": "low",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "gallery-1",
+      "page": "home",
+      "section": "gallery",
+      "category": "gallery",
+      "label": "Boutique ambiance shot",
+      "theme": "lifestyle, shopping experience, warm and inviting",
+      "query": "boutique shopping experience lifestyle warm inviting ambiance",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "gallery-2",
+      "page": "home",
+      "section": "gallery",
+      "category": "gallery",
+      "label": "Customer experience or styling moment",
+      "theme": "happy customer, fashion styling, personal service",
+      "query": "fashion styling personal shopping experience customer boutique",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "gallery-3",
+      "page": "home",
+      "section": "gallery",
+      "category": "gallery",
+      "label": "Product detail close-up",
+      "theme": "texture, quality craftsmanship, artistic shot",
+      "query": "fashion product detail close-up texture quality craftsmanship",
+      "priority": "low",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "contact-bg",
+      "page": "home",
+      "section": "contact",
+      "category": "custom",
+      "label": "Contact section background texture",
+      "theme": "subtle, elegant, complementary to brand colors",
+      "query": "elegant abstract texture soft warm tones minimal",
+      "priority": "low",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "footer-pattern",
+      "page": "home",
+      "section": "footer",
+      "category": "custom",
+      "label": "Decorative footer element",
+      "theme": "subtle pattern, brand consistent",
+      "query": "subtle geometric pattern elegant minimal gold accents",
+      "priority": "low",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "cta-background",
+      "page": "home",
+      "section": "cta",
+      "category": "place",
+      "label": "Call-to-action background",
+      "theme": "aspirational, inviting visit to store",
+      "query": "welcoming boutique entrance door warm light inviting",
+      "priority": "medium",
+      "source": "search",
+      "fallback": "GR-AI"
+    },
+    {
+      "slot_id": "brand-story",
+      "page": "home",
+      "section": "brand",
+      "category": "custom",
+      "label": "Brand story visual element",
+      "theme": "creative process, fashion design inspiration",
+      "query": "fashion design creative process inspiration mood board",
+      "priority": "low",
+      "source": "search",
+      "fallback": "GR-AI"
+    }
+  ]
+}
