@@ -1,52 +1,46 @@
-const menuBtn = document.getElementById('menuBtn');
-const nav = document.getElementById('mainNav');
-if (menuBtn && nav) {
-  menuBtn.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+// Boutique Luma — interacciones base (no interfiere con comments.js)
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { nav.classList.remove('open'); });
+    });
+  }
+
+  // Filtro de catálogo
+  var chips = document.querySelectorAll('.chip[data-filter]');
+  var cards = document.querySelectorAll('#catalogGrid .card');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('is-active'); });
+      chip.classList.add('is-active');
+      var f = chip.getAttribute('data-filter');
+      cards.forEach(function (card) {
+        if (f === 'all' || card.getAttribute('data-cat') === f) {
+          card.classList.remove('hide');
+        } else {
+          card.classList.add('hide');
+        }
+      });
+    });
   });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
-}
 
-// Filtros catálogo
-const chips = document.querySelectorAll('.chip');
-const cards = document.querySelectorAll('.p-card');
-chips.forEach(ch => ch.addEventListener('click', () => {
-  chips.forEach(c => c.classList.remove('active'));
-  ch.classList.add('active');
-  const f = ch.dataset.filter;
-  cards.forEach(card => card.classList.toggle('hide', f !== 'all' && card.dataset.cat !== f));
-}));
-
-// Guardados (wishlist local, sin backend)
-const KEY = 'luma_favs_v1';
-const getFavs = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch { return []; } };
-const setFavs = v => localStorage.setItem(KEY, JSON.stringify(v));
-const counter = document.getElementById('favCounter');
-const favList = document.getElementById('favList');
-function renderFavs() {
-  const favs = getFavs();
-  if (counter) counter.textContent = 'Guardados: ' + favs.length;
-  if (favList) favList.textContent = favs.length ? 'Tus guardados: ' + favs.join(' · ') : 'Aún no guardas prendas.';
-  document.querySelectorAll('[data-fav]').forEach(b => {
-    b.textContent = getFavs().includes(b.dataset.fav) ? 'Guardado ✓' : 'Guardar';
-  });
-}
-document.querySelectorAll('[data-fav]').forEach(b => b.addEventListener('click', () => {
-  let favs = getFavs();
-  const name = b.dataset.fav;
-  favs = favs.includes(name) ? favs.filter(x => x !== name) : [...favs, name];
-  setFavs(favs); renderFavs();
-}));
-const showBtn = document.getElementById('showFavs');
-if (showBtn) showBtn.addEventListener('click', () => {
-  const favs = getFavs();
-  alert(favs.length ? 'Guardados en Boutique Luma:\n- ' + favs.join('\n- ') + '\n\nMuestra esta lista en tienda.' : 'Aún no guardas prendas. Explora el catálogo.');
-});
-const clearBtn = document.getElementById('clearFavs');
-if (clearBtn) clearBtn.addEventListener('click', () => { setFavs([]); renderFavs(); });
-renderFavs();
-
-// Reveal on scroll
-const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.12 });
-document.querySelectorAll('.card,.p-card,.about,.gallery figure,.reviews-shell').forEach(el => { el.classList.add('reveal'); io.observe(el); });
+  // Reveal on scroll
+  var revealEls = document.querySelectorAll('.card, .g-item, .howto-card, .comments-card, .about-copy, .collection-copy');
+  revealEls.forEach(function (el) { el.classList.add('reveal'); });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
+  }
+})();
