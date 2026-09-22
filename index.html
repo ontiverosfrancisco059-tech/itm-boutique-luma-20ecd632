@@ -3,311 +3,266 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boutique Luma | Hopelchen</title>
-  <meta name="description" content="Boutique Luma - Moda exclusiva y estilo en Hopelchen. Descubre nuestra coleccion curada de prendas y accesorios.">
+  <meta name="description" content="Boutique Luma, tienda de moda y accesorios en Hopelchen, Campeche. Descubre prendas seleccionadas, estilo y atencion cercana.">
+  <meta name="theme-color" content="#211e1a">
+  <title>Boutique Luma · Moda en Hopelchen, Campeche</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="site-header" id="header">
-    <div class="header-inner">
-      <a href="#" class="logo" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">
-        <span class="logo-mark">L</span>
-        <span class="logo-text">Boutique Luma</span>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Boutique Luma, inicio" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">
+        <span class="brand-mark">L</span>
+        <span class="brand-text">Boutique <strong>Luma</strong></span>
       </a>
-      <nav class="main-nav" id="mainNav">
-        <a href="#inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
-        <a href="#nosotros" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Nosotros</a>
-        <a href="#coleccion" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Coleccion</a>
-        <a href="#galeria" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Galeria</a>
-        <a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Opiniones</a>
-        <a href="#contacto" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Contacto</a>
-      </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" data-eb-editable="link" data-eb-key="index.button.8" data-eb-role="button" data-eb-kind="link">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primaryNav" data-eb-editable="link" data-eb-key="index.button.2" data-eb-role="button" data-eb-kind="link">
+        <span></span><span></span><span></span>
       </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Navegacion principal">
+        <a href="#inicio" class="nav-link" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a>
+        <a href="#nosotros" class="nav-link" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Nosotros</a>
+        <a href="#catalogo" class="nav-link" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Catalogo</a>
+        <a href="#galeria" class="nav-link" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Galeria</a>
+        <a href="#opiniones" class="nav-link" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+        <a href="#contacto" class="nav-link nav-cta" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Visitanos</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="inicio">
-    <div class="hero-bg">
-      <img src="https://images.pexels.com/photos/35045845/pexels-photo-35045845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Interior elegante de Boutique Luma con ropa y accesorios de moda" loading="eager" data-eb-editable="image" data-eb-key="index.img.9" data-eb-role="img" data-eb-kind="image">
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-tag" data-eb-editable="text" data-eb-key="index.p.10" data-eb-role="p" data-eb-kind="text">Hopelchen</p>
-      <h1 class="hero-title" data-eb-editable="text" data-eb-key="index.h1.11" data-eb-role="h1" data-eb-kind="text">Donde el estilo <br><em>se vuelve personal</em></h1>
-      <p class="hero-desc" data-eb-editable="text" data-eb-key="index.p.12" data-eb-role="p" data-eb-kind="text">Descubre piezas unicas seleccionadas para quienes buscan autenticidad en cada detalle.</p>
-      <div class="hero-actions">
-        <a href="#coleccion" class="btn btn-primary" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Ver Coleccion</a>
-        <a href="#contacto" class="btn btn-outline" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Visitanos</a>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <!-- About Section -->
-  <section class="about" id="nosotros">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image">
-          <img src="https://images.pexels.com/photos/5865388/pexels-photo-5865388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Interior acogedor de la boutique con productos exhibidos en estantes" loading="lazy" data-eb-editable="image" data-eb-key="index.img.15" data-eb-role="img" data-eb-kind="image">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <img class="hero-bg" src="https://images.pexels.com/photos/3965551/pexels-photo-3965551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Interior elegante de boutique con prendas en ganchos y luz suave" data-eb-editable="image" data-eb-key="index.img.9" data-eb-role="img" data-eb-kind="image">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.10" data-eb-role="p" data-eb-kind="text">Boutique de moda · Hopelchen, Campeche</p>
+        <h1 data-eb-editable="text" data-eb-key="index.h1.11" data-eb-role="h1" data-eb-kind="text">Boutique Luma</h1>
+        <p class="hero-tagline" data-eb-editable="text" data-eb-key="index.p.12" data-eb-role="p" data-eb-kind="text">Piezas seleccionadas con detalle para quienes buscan estilo propio y atencion cercana.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#catalogo" data-eb-editable="link" data-eb-key="index.a.13" data-eb-role="a" data-eb-kind="link">Ver catalogo</a>
+          <a class="btn btn-ghost" href="#opiniones" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Deja tu opinion</a>
         </div>
-        <div class="about-content">
-          <span class="section-tag">Nuestra Historia</span>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.16" data-eb-role="h2" data-eb-kind="text">Mas que una boutique,<br>una experiencia</h2>
-          <p class="about-text" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">En Boutique Luma creemos que la moda es una forma de expresion. Cada prenda en nuestra tienda ha sido cuidadosamente seleccionada para ofrecer piezas que combinan tendencia, calidad y un toque singular.</p>
-          <p class="about-text" data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Nacimos en Hopelchen con la mision de acercar la moda con personalidad a nuestra comunidad. Aqui no solo vistes, descubres lo que te representa.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number">500+</span>
-              <span class="stat-label">Prendas unicas</span>
+      </div>
+      <a class="hero-scroll" href="#nosotros" aria-label="Bajar a la siguiente seccion" data-eb-editable="link" data-eb-key="index.a.15" data-eb-role="a" data-eb-kind="link"><span></span></a>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="https://images.pexels.com/photos/9594677/pexels-photo-9594677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Perchero minimalista con prendas en tonos tierra en un estudio luminoso" loading="lazy" data-eb-editable="image" data-eb-key="index.img.16" data-eb-role="img" data-eb-kind="image">
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.17" data-eb-role="p" data-eb-kind="text">Nosotros</p>
+          <h2 data-eb-editable="text" data-eb-key="index.h2.18" data-eb-role="h2" data-eb-kind="text">Un espacio pensado para tu estilo</h2>
+          <p data-eb-editable="text" data-eb-key="index.p.19" data-eb-role="p" data-eb-kind="text">Boutique Luma nace como un negocio local con identidad propia: un lugar donde cada pieza es elegida con sentido, desde prendas esenciales hasta accesorios con caracter.</p>
+          <p data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Nuestro proposito es presentar el negocio, acercarte a lo que ofrecemos y acompañarte a encontrar lo que mejor te queda, con trato directo y recomendaciones sinceras.</p>
+          <ul class="about-points">
+            <li>Seleccion cuidada de ropa y accesorios</li>
+            <li>Estilo elegante, cercano y atemporal</li>
+            <li>Atencion local en el corazon de Hopelchen</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section class="section catalog" id="catalogo">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">Catalogo</p>
+          <h2 data-eb-editable="text" data-eb-key="index.h2.22" data-eb-role="h2" data-eb-kind="text">Colecciones destacadas</h2>
+          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">Una mirada a piezas representativas de la boutique. Visitanos para conocer la temporada completa.</p>
+        </header>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="https://images.pexels.com/photos/5531551/pexels-photo-5531551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Prendas en percheros de madera dentro de una boutique moderna" loading="lazy" data-eb-editable="image" data-eb-key="index.img.24" data-eb-role="img" data-eb-kind="image">
             </div>
-            <div class="stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Atencion personal</span>
+            <div class="product-body">
+              <span class="product-tag">Prendas</span>
+              <h3 data-eb-editable="text" data-eb-key="index.h3.25" data-eb-role="h3" data-eb-kind="text">Esenciales para ella</h3>
+              <p data-eb-editable="text" data-eb-key="index.p.26" data-eb-role="p" data-eb-kind="text">Bases versatiles y comodas para el dia a dia, listas para combinar.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          </article>
 
-  <!-- Products Section -->
-  <section class="products" id="coleccion">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Lo Nuevo</span>
-        <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.19" data-eb-role="h2" data-eb-kind="text">Nuestra Coleccion</h2>
-        <p class="section-desc" data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Piezas seleccionadas para complementar tu estilo con elegancia y originalidad.</p>
-      </div>
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-image">
-            <img src="https://images.pexels.com/photos/1499476/pexels-photo-1499476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Lentes de moda con tono azul sobre fondo minimalista" loading="lazy" data-eb-editable="image" data-eb-key="index.img.21" data-eb-role="img" data-eb-kind="image">
-            <span class="product-badge">Nuevo</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name" data-eb-editable="text" data-eb-key="index.h3.22" data-eb-role="h3" data-eb-kind="text">Lentes de Sol Luma</h3>
-            <p class="product-category" data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">Accesorios</p>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image">
-            <img src="https://images.pexels.com/photos/17938771/pexels-photo-17938771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bolso de piel blanca con tacón sobre fondo blanco" loading="lazy" data-eb-editable="image" data-eb-key="index.img.24" data-eb-role="img" data-eb-kind="image">
-          </div>
-          <div class="product-info">
-            <h3 class="product-name" data-eb-editable="text" data-eb-key="index.h3.25" data-eb-role="h3" data-eb-kind="text">Bolso Clasico</h3>
-            <p class="product-category" data-eb-editable="text" data-eb-key="index.p.26" data-eb-role="p" data-eb-kind="text">Bolsos</p>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image">
-            <img src="https://images.pexels.com/photos/6461325/pexels-photo-6461325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ropa de tela natural colgando en perchero de madera con luces" loading="lazy" data-eb-editable="image" data-eb-key="index.img.27" data-eb-role="img" data-eb-kind="image">
-            <span class="product-badge">Popular</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name" data-eb-editable="text" data-eb-key="index.h3.28" data-eb-role="h3" data-eb-kind="text">Camisas de Temporada</h3>
-            <p class="product-category" data-eb-editable="text" data-eb-key="index.p.29" data-eb-role="p" data-eb-kind="text">Ropa</p>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image">
-            <img src="https://images.pexels.com/photos/22128898/pexels-photo-22128898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Tacones grises elegantes sobre sombreros blancos de sol" loading="lazy" data-eb-editable="image" data-eb-key="index.img.30" data-eb-role="img" data-eb-kind="image">
-          </div>
-          <div class="product-info">
-            <h3 class="product-name" data-eb-editable="text" data-eb-key="index.h3.31" data-eb-role="h3" data-eb-kind="text">Tacones Elegantes</h3>
-            <p class="product-category" data-eb-editable="text" data-eb-key="index.p.32" data-eb-role="p" data-eb-kind="text">Calzado</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section class="gallery" id="galeria">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Ambiente</span>
-        <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.33" data-eb-role="h2" data-eb-kind="text">La Experiencia Luma</h2>
-        <p class="section-desc" data-eb-editable="text" data-eb-key="index.p.34" data-eb-role="p" data-eb-kind="text">Un vistazo a lo que awaits en cada visita.</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item gallery-item-wide">
-          <img src="https://images.pexels.com/photos/34828454/pexels-photo-34828454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Tienda bien iluminada con telas coloridas y articulos decorativos" loading="lazy" data-eb-editable="image" data-eb-key="index.img.35" data-eb-role="img" data-eb-kind="image">
-          <div class="gallery-caption">
-            <span>Ambiente acogedor</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.pexels.com/photos/5418886/pexels-photo-5418886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Dos mujeres explorando opciones de moda junto a percheros" loading="lazy" data-eb-editable="image" data-eb-key="index.img.36" data-eb-role="img" data-eb-kind="image">
-          <div class="gallery-caption">
-            <span>Atencion personal</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.pexels.com/photos/755822/pexels-photo-755822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Detalle cercano de correa de piel elegante en bolso" loading="lazy" data-eb-editable="image" data-eb-key="index.img.37" data-eb-role="img" data-eb-kind="image">
-          <div class="gallery-caption">
-            <span>Calidad artesanal</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Brand Story -->
-  <section class="brand-story">
-    <div class="container">
-      <div class="brand-grid">
-        <div class="brand-content">
-          <span class="section-tag">Detras de Luma</span>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.38" data-eb-role="h2" data-eb-kind="text">Creatividad <br><em>con proposito</em></h2>
-          <p class="brand-text" data-eb-editable="text" data-eb-key="index.p.39" data-eb-role="p" data-eb-kind="text">Cada saison investigamos tendencias, seleccionamos materiales y elegimos piezas que cuentan una historia. Nuestro compromiso es que cada cliente salga sintiendose unica.</p>
-          <p class="brand-text" data-eb-editable="text" data-eb-key="index.p.40" data-eb-role="p" data-eb-kind="text">Desde Hopelchen, Luma conecta moda y personalidad para crear looks que perduran mas alla de lo pasajero.</p>
-        </div>
-        <div class="brand-image">
-          <img src="https://images.pexels.com/photos/9849638/pexels-photo-9849638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Disenador de moda evaluando bocetos y fotos en tablero de trabajo" loading="lazy" data-eb-editable="image" data-eb-key="index.img.41" data-eb-role="img" data-eb-kind="image">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="cta-bg">
-      <img src="https://images.pexels.com/photos/36502525/pexels-photo-36502525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Entrada acogedora de tienda con decoracion rustica y luces calidas" loading="lazy" data-eb-editable="image" data-eb-key="index.img.42" data-eb-role="img" data-eb-kind="image">
-      <div class="cta-overlay"></div>
-    </div>
-    <div class="container cta-content">
-      <h2 class="cta-title" data-eb-editable="text" data-eb-key="index.h2.43" data-eb-role="h2" data-eb-kind="text">Ven y vive la experiencia Luma</h2>
-      <p class="cta-desc" data-eb-editable="text" data-eb-key="index.p.44" data-eb-role="p" data-eb-kind="text">Te esperamos con la mejor disposicion para ayudarte a encontrar tu proximo look favorito.</p>
-      <a href="#contacto" class="btn btn-primary btn-lg" data-eb-editable="link" data-eb-key="index.a.45" data-eb-role="a" data-eb-kind="link">Como Llegar</a>
-    </div>
-  </section>
-
-  <!-- Opiniones / Resenas Section -->
-  <section class="reviews" id="opiniones">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Comunidad</span>
-        <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.46" data-eb-role="h2" data-eb-kind="text">Lo que dicen nuestras clientas</h2>
-        <p class="section-desc" data-eb-editable="text" data-eb-key="index.p.47" data-eb-role="p" data-eb-kind="text">Cada opinion nos ayuda a mejorar. Inicia sesion con Google, califica con estrellas y comparte tu experiencia.</p>
-      </div>
-
-      <!-- Profile area -->
-      <div class="reviews-profile" data-itm-profile data-project-id="20ecd632-fab6-4ab1-a987-10cf5b094690"></div>
-
-      <!-- Comments shell -->
-      <div class="reviews-shell" data-itm-comments-shell>
-        <div class="reviews-info">
-          <div class="reviews-info-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
-            <span>Inicia sesion con Google para participar</span>
-          </div>
-          <div class="reviews-info-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-            <span>Guarda tu nombre; tu telefono es privado</span>
-          </div>
-          <div class="reviews-info-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <span>Califica con estrellas y deja tu comentario</span>
-          </div>
-        </div>
-        <div class="reviews-comments" data-itm-comments data-project-id="20ecd632-fab6-4ab1-a987-10cf5b094690"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contacto">
-    <div class="contact-bg">
-      <img src="https://images.pexels.com/photos/7130535/pexels-photo-7130535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Textura abstracta elegante con tonos suaves" loading="lazy" data-eb-editable="image" data-eb-key="index.img.48" data-eb-role="img" data-eb-kind="image">
-      <div class="contact-overlay"></div>
-    </div>
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <span class="section-tag">Encuentranos</span>
-          <h2 class="section-title" data-eb-editable="text" data-eb-key="index.h2.49" data-eb-role="h2" data-eb-kind="text">Contacto</h2>
-          <div class="contact-details">
-            <div class="contact-item">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <div>
-                <strong>Ubicacion</strong>
-                <span>Hopelchen, Campeche, Mexico</span>
-              </div>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="https://images.pexels.com/photos/36730407/pexels-photo-36730407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Dos personas revisando un blazer gris en una tienda de ropa" loading="lazy" data-eb-editable="image" data-eb-key="index.img.27" data-eb-role="img" data-eb-kind="image">
             </div>
-            <div class="contact-item">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <div>
-                <strong>Horario</strong>
-                <span>Lunes a Sabado: 10:00 - 20:00</span>
-              </div>
+            <div class="product-body">
+              <span class="product-tag">Looks</span>
+              <h3 data-eb-editable="text" data-eb-key="index.h3.28" data-eb-role="h3" data-eb-kind="text">Armario con actitud</h3>
+              <p data-eb-editable="text" data-eb-key="index.p.29" data-eb-role="p" data-eb-kind="text">Conjuntos que acompanan tanto la oficina como la tarde libre.</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <img src="https://images.pexels.com/photos/17938771/pexels-photo-17938771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bolso de piel blanca y tacon sobre fondo blanco" loading="lazy" data-eb-editable="image" data-eb-key="index.img.30" data-eb-role="img" data-eb-kind="image">
+            </div>
+            <div class="product-body">
+              <span class="product-tag">Accesorios</span>
+              <h3 data-eb-editable="text" data-eb-key="index.h3.31" data-eb-role="h3" data-eb-kind="text">Detalles que suman</h3>
+              <p data-eb-editable="text" data-eb-key="index.p.32" data-eb-role="p" data-eb-kind="text">Bolsos y calzado para rematar cada outfit con elegancia simple.</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <img src="https://images.pexels.com/photos/6268370/pexels-photo-6268370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Vestidor vintage con espejo redondo y decoracion ecléctica" loading="lazy" data-eb-editable="image" data-eb-key="index.img.33" data-eb-role="img" data-eb-kind="image">
+            </div>
+            <div class="product-body">
+              <span class="product-tag">Pruebas</span>
+              <h3 data-eb-editable="text" data-eb-key="index.h3.34" data-eb-role="h3" data-eb-kind="text">Vestidores pensados</h3>
+              <p data-eb-editable="text" data-eb-key="index.p.35" data-eb-role="p" data-eb-kind="text">Un espacio con espejo y buena luz para decidir con calma.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.36" data-eb-role="p" data-eb-kind="text">Galeria</p>
+          <h2 data-eb-editable="text" data-eb-key="index.h2.37" data-eb-role="h2" data-eb-kind="text">El ambiente de la boutique</h2>
+          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.38" data-eb-role="p" data-eb-kind="text">Luz natural, orden y una atmosfera serena para disfrutar la experiencia de ir de compras.</p>
+        </header>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <figure class="g-item g-tall" data-src="https://images.pexels.com/photos/36655728/pexels-photo-36655728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <img src="https://images.pexels.com/photos/36655728/pexels-photo-36655728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Boutique con vestidos elegantes y detalles de paja con aire costero" loading="lazy" data-eb-editable="image" data-eb-key="index.img.39" data-eb-role="img" data-eb-kind="image">
+            <figcaption>Interior de la boutique</figcaption>
+          </figure>
+          <figure class="g-item" data-src="https://images.pexels.com/photos/29906028/pexels-photo-29906028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <img src="https://images.pexels.com/photos/29906028/pexels-photo-29906028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Estantes con camisas en percheros dentro de una tienda de moda" loading="lazy" data-eb-editable="image" data-eb-key="index.img.40" data-eb-role="img" data-eb-kind="image">
+            <figcaption>Estantes y vitrinas</figcaption>
+          </figure>
+          <figure class="g-item" data-src="https://images.pexels.com/photos/36730407/pexels-photo-36730407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <img src="https://images.pexels.com/photos/36730407/pexels-photo-36730407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Clientas eligiendo una prenda sobre un perchero" loading="lazy" data-eb-editable="image" data-eb-key="index.img.41" data-eb-role="img" data-eb-kind="image">
+            <figcaption>Momento de elegir</figcaption>
+          </figure>
+          <figure class="g-item g-wide" data-src="https://images.pexels.com/photos/35068510/pexels-photo-35068510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <img src="https://images.pexels.com/photos/35068510/pexels-photo-35068510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Exterior luminoso de una boutique con escaparates amplios" loading="lazy" data-eb-editable="image" data-eb-key="index.img.42" data-eb-role="img" data-eb-kind="image">
+            <figcaption>Fachada del negocio</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="section reviews" id="opiniones">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.43" data-eb-role="p" data-eb-kind="text">Opiniones</p>
+          <h2 data-eb-editable="text" data-eb-key="index.h2.44" data-eb-role="h2" data-eb-kind="text">Resenas y comentarios</h2>
+          <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.45" data-eb-role="p" data-eb-kind="text">Cuentanos como fue tu visita. Tu experiencia ayuda a que otras personas descubran Boutique Luma.</p>
+        </header>
+
+        <div class="reviews-layout" data-itm-comments-shell>
+          <div class="reviews-guide">
+            <h3 data-eb-editable="text" data-eb-key="index.h3.46" data-eb-role="h3" data-eb-kind="text">Como participar</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.47" data-eb-role="p" data-eb-kind="text">Compartir tu opinion toma solo un momento y no necesitas registros complicados.</p>
+            <ul class="reviews-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div><strong>Inicia sesion con Google</strong><p data-eb-editable="text" data-eb-key="index.p.48" data-eb-role="p" data-eb-kind="text">Entra con tu cuenta en un solo clic. Sin contrasenas extra.</p></div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div><strong>Guarda tu nombre</strong><p data-eb-editable="text" data-eb-key="index.p.49" data-eb-role="p" data-eb-kind="text">Elige como apareceras en tu comentario. Solo tu nombre es publico.</p></div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div><strong>Telefono opcional y privado</strong><p data-eb-editable="text" data-eb-key="index.p.50" data-eb-role="p" data-eb-kind="text">Si lo agregas, queda protegido: nunca se muestra publicamente.</p></div>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <div><strong>Califica y comenta</strong><p data-eb-editable="text" data-eb-key="index.p.51" data-eb-role="p" data-eb-kind="text">Puntua con estrellas y deja tu resena. Puedes editar o eliminar lo que publiques y cerrar sesion cuando quieras.</p></div>
+              </li>
+            </ul>
+            <p class="reviews-note" data-eb-editable="text" data-eb-key="index.p.52" data-eb-role="p" data-eb-kind="text">Los comentarios se muestran bajo moderacion y conservan tu privacidad: el telefono nunca aparece publicado.</p>
+          </div>
+
+          <div class="reviews-panel">
+            <div class="reviews-profile" data-itm-profile data-project-id="20ecd632-fab6-4ab1-a987-10cf5b094690">
+              <p class="reviews-profile-placeholder" data-eb-editable="text" data-eb-key="index.p.53" data-eb-role="p" data-eb-kind="text">Tu perfil aparecera aqui: inicia sesion para guardar tu nombre y telefono opcional.</p>
+            </div>
+            <div class="reviews-comments" data-itm-comments data-project-id="20ecd632-fab6-4ab1-a987-10cf5b094690">
+              <p class="reviews-comments-placeholder" data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text">Resenas y calificaciones de los visitantes se cargaran en este espacio.</p>
             </div>
           </div>
         </div>
-        <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="contactName">Nombre</label>
-              <input type="text" id="contactName" name="name" required placeholder="Tu nombre">
-            </div>
-            <div class="form-group">
-              <label for="contactEmail">Correo</label>
-              <input type="email" id="contactEmail" name="email" required placeholder="correo@ejemplo.com">
-            </div>
-            <div class="form-group">
-              <label for="contactMessage">Mensaje</label>
-              <textarea id="contactMessage" name="message" rows="4" required placeholder="En que podemos ayudarte?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block" data-eb-editable="link" data-eb-key="index.button.50" data-eb-role="button" data-eb-kind="link">Enviar Mensaje</button>
-          </form>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-map">
+          <img src="https://images.pexels.com/photos/32204736/pexels-photo-32204736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Calle colonial colorida que recuerda al centro de Campeche" loading="lazy" data-eb-editable="image" data-eb-key="index.img.55" data-eb-role="img" data-eb-kind="image">
+          <p class="map-caption" data-eb-editable="text" data-eb-key="index.p.56" data-eb-role="p" data-eb-kind="text">Hopelchen, Campeche · Mexico</p>
+        </div>
+        <div class="contact-copy">
+          <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.57" data-eb-role="p" data-eb-kind="text">Ubicacion</p>
+          <h2 data-eb-editable="text" data-eb-key="index.h2.58" data-eb-role="h2" data-eb-kind="text">Encuentranos en Hopelchen</h2>
+          <p data-eb-editable="text" data-eb-key="index.p.59" data-eb-role="p" data-eb-kind="text">Somos un negocio local con trato directo. Pasa a conocernos, tomar tu medida y llevar un buen consejo de estilo.</p>
+          <ul class="contact-list">
+            <li><span class="contact-label">Ciudad</span>Hopelchen, Campeche</li>
+            <li><span class="contact-label">Pais</span>Mexico</li>
+            <li><span class="contact-label">Tipo</span>Boutique de moda y accesorios</li>
+          </ul>
+          <a class="btn btn-solid" href="#opiniones" data-eb-editable="link" data-eb-key="index.a.60" data-eb-role="a" data-eb-kind="link">Comparte tu experiencia</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
+      <div class="container">
+        <div class="cta-strip">
+          <img class="cta-bg" src="https://images.pexels.com/photos/35068510/pexels-photo-35068510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" aria-hidden="true" loading="lazy" data-eb-editable="image" data-eb-key="index.img.61" data-eb-role="img" data-eb-kind="image">
+          <div class="cta-inner">
+            <h3 data-eb-editable="text" data-eb-key="index.h3.62" data-eb-role="h3" data-eb-kind="text">El estilo se encuentra en los detalles</h3>
+            <p data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">Te esperamos en Boutique Luma para descubrir piezas pensadas para ti.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="site-footer">
-    <div class="footer-pattern">
-      <img src="https://images.pexels.com/photos/8313255/pexels-photo-8313255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Decoracion minimalista con vela y jarron de cristal" loading="lazy" data-eb-editable="image" data-eb-key="index.img.51" data-eb-role="img" data-eb-kind="image">
-    </div>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#" class="logo" data-eb-editable="link" data-eb-key="index.a.52" data-eb-role="a" data-eb-kind="link">
-            <span class="logo-mark">L</span>
-            <span class="logo-text">Boutique Luma</span>
-          </a>
-          <p class="footer-tagline" data-eb-editable="text" data-eb-key="index.p.53" data-eb-role="p" data-eb-kind="text">Moda con personalidad en Hopelchen.</p>
-        </div>
-        <div class="footer-nav">
-          <h4 data-eb-editable="text" data-eb-key="index.h4.54" data-eb-role="h4" data-eb-kind="text">Navegacion</h4>
-          <a href="#inicio" data-eb-editable="link" data-eb-key="index.a.55" data-eb-role="a" data-eb-kind="link">Inicio</a>
-          <a href="#nosotros" data-eb-editable="link" data-eb-key="index.a.56" data-eb-role="a" data-eb-kind="link">Nosotros</a>
-          <a href="#coleccion" data-eb-editable="link" data-eb-key="index.a.57" data-eb-role="a" data-eb-kind="link">Coleccion</a>
-          <a href="#galeria" data-eb-editable="link" data-eb-key="index.a.58" data-eb-role="a" data-eb-kind="link">Galeria</a>
-          <a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.59" data-eb-role="a" data-eb-kind="link">Opiniones</a>
-          <a href="#contacto" data-eb-editable="link" data-eb-key="index.a.60" data-eb-role="a" data-eb-kind="link">Contacto</a>
-        </div>
-        <div class="footer-social">
-          <h4 data-eb-editable="text" data-eb-key="index.h4.61" data-eb-role="h4" data-eb-kind="text">Siguenos</h4>
-          <p data-eb-editable="text" data-eb-key="index.p.62" data-eb-role="p" data-eb-kind="text">Encuentranos en redes sociales para ver lo nuevo.</p>
-        </div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark brand-mark-light">L</span>
+        <span class="brand-text">Boutique <strong>Luma</strong></span>
       </div>
-      <div class="footer-bottom">
-        <p data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">&copy; 2026 Boutique Luma. Todos los derechos reservados.</p>
-      </div>
+      <nav class="footer-nav" aria-label="Navegacion del pie de pagina">
+        <a href="#inicio" data-eb-editable="link" data-eb-key="index.a.64" data-eb-role="a" data-eb-kind="link">Inicio</a>
+        <a href="#nosotros" data-eb-editable="link" data-eb-key="index.a.65" data-eb-role="a" data-eb-kind="link">Nosotros</a>
+        <a href="#catalogo" data-eb-editable="link" data-eb-key="index.a.66" data-eb-role="a" data-eb-kind="link">Catalogo</a>
+        <a href="#galeria" data-eb-editable="link" data-eb-key="index.a.67" data-eb-role="a" data-eb-kind="link">Galeria</a>
+        <a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.68" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+        <a href="#contacto" data-eb-editable="link" data-eb-key="index.a.69" data-eb-role="a" data-eb-kind="link">Contacto</a>
+      </nav>
+      <p class="footer-note" data-eb-editable="text" data-eb-key="index.p.70" data-eb-role="p" data-eb-kind="text">Boutique Luma · Hopelchen, Campeche, Mexico</p>
     </div>
   </footer>
 
-  <script src="https://itm-void-excepcional.pages.dev/comments.js" defer></script>
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-label="Vista ampliada de imagen">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar" data-eb-editable="link" data-eb-key="index.button.71" data-eb-role="button" data-eb-kind="link">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior" data-eb-editable="link" data-eb-key="index.button.72" data-eb-role="button" data-eb-kind="link">‹</button>
+    <img id="lightboxImg" src="" alt="" data-eb-editable="image" data-eb-key="index.img.73" data-eb-role="img" data-eb-kind="image">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Imagen siguiente" data-eb-editable="link" data-eb-key="index.button.74" data-eb-role="button" data-eb-kind="link">›</button>
+  </div>
+
   <script src="script.js" defer></script>
+  <script src="https://itm-void-excepcional.pages.dev/comments.js" defer></script>
 </body>
 </html>
